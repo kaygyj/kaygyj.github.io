@@ -1,394 +1,426 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="templatemo">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<title>Kay Gan's Portfolio Website</title>
-
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/animate.css">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Metas Page details-->
+<title>Kay Gan's Portfolio</title>
+<meta name="description" content="OnePage Resume Portfolio">
+<meta name="author" content="">
+<!-- Mobile Specific Metas-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--main style-->
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+<!--google font style-->
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+<!--font-family: 'Metrophobic', serif;-->
+<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic' rel='stylesheet' type='text/css'> 
+<!--font-family: 'Open Sans', sans-serif;-->
+<!-- font icon css style-->
 <link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/templatemo-style.css">
-
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-
 </head>
-<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-
-
-<!-- PRE LOADER -->
-
-<div class="preloader">
-     <div class="spinner">
-          <span class="spinner-rotate"></span>
-     </div>
+<body onLoad="load()" onUnload="GUnload()">
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status"></div>
 </div>
+<!--wrapper start-->
+<div class="wrapper noGap" id="wrapper">
 
-
-<!-- Navigation Section -->
-
-<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
-     <div class="container">
-
-          <!-- navbar header -->
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-               <a href="#" class="navbar-brand">Stimulus</a>
+<!--Header start -->
+<header>
+  	<!--menu start-->
+    <div class="menu">
+    <a href="#" class="nav-icon" id="nav-show"><i class="fa fa-bars"></i></a>
+      <div class="navbar-wrapper">
+        <div class="container">
+          <div class="navwrapper">
+            <div class="navbar navbar-inverse navbar-static-top">
+              <div class="container">
+              	<!--<div class="logo">logo</div> -->
+                <div class="navArea"><a href="#" class="closeMenu"><i class="fa fa-times"></i></a>
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                     <!-- <a class="navbar-brand" href="#">Menu</a>  --></div>
+                    <div class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                        <li class="menuItem active"><a href="#wrapper">Home</a></li>
+                        <li class="menuItem"><a href="#aboutus">About Me</a></li>
+                        <li class="menuItem"><a href="#skillset">Skills</a></li>
+                        <li class="menuItem"><a href="#experience">Experience</a></li>
+                        <li class="menuItem"><a href="#ourwork">Portfolio</a></li>
+                        <li class="menuItem"><a href="#contact">Contact</a></li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home" class="smoothScroll">Home</a></li>
-                    <li><a href="#about" class="smoothScroll">About Me</a></li>
-                    <li><a href="#experience" class="smoothScroll">Experiences</a></li>
-                    <li><a href="#quotes" class="smoothScroll">Testimonial</a></li>
-                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
-               </ul>
-          </div>
-
-     </div>
-</div>
-
-
-<!-- Home Section -->
-
-<section id="home" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-6 col-sm-6">
-                    <div class="home-img"></div>
-               </div>
-
-               <div class="col-md-6 col-sm-6">
-                    <div class="home-thumb">
-                         <div class="section-title">
-                              <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4>
-                              <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Kay</strong> currently based in Singapore.</h1>
-                              <p class="wow fadeInUp" data-wow-delay="0.9s">Experienced Agile Project Manager with a focus in innovation and UX design. I conduct Design Thinking workshops and lecture on Crypto-Literacy as well. </p>
-                              
-                              <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
-                              
-                         </div>
-                    </div>
-               </div>
-
-
-          </div>
-     </div>
-</section>
-
-
-<!-- About Section -->
-
-<section id="about" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-6 col-sm-12">
-                    <div class="about-thumb">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
-                              <h1>Donec auctor</h1>
-                              <p class="color-yellow">Focus on Design Thinking and Agile Methodologies</p>
-                         </div>
-                         <div class="wow fadeInUp" data-wow-delay="0.8s">
-                              <p>Experienced Project Manager with a focus in innovation and UX design. Familiar with Adobe Creative Cloud as well </p>
-                              <p>I conduct Design Thinking workshops and lecture on Blockchain & Crypto-Literacy as well.</p>
-                         </div>
-                    </div>
-               </div>
-
-               <div class="col-md-3 col-sm-6">
-                    <div class="background-image about-img"></div>
-               </div>
-
-               <div class="bg-yellow col-md-3 col-sm-6">
-                    <div class="skill-thumb">
-                         <div class="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
-                              <h1>My Skills</h1>
-                              <p class="color-white">Project Management . Design Thinking . Product Management</p>
-                         </div>
-
-                         <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
-                         <strong>Project Management</strong>
-                              <span class="color-white pull-right">90%</span>
-                                   <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                                   </div>
-
-                         <strong>Design Thinking</strong>
-                              <span class="color-white pull-right">80%</span>
-                                   <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-                                   </div>
-
-                         <strong>Product Management</strong>
-                              <span class="color-white pull-right">80%</span>
-                                   <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                                   </div>
-                         </div>
-
-                    </div>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-
-<!-- Service Section -->
-
-<section id="service" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="bg-yellow col-md-3 col-sm-6">
-                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
-                         <i class="fa fa-desktop"></i>
-                              <h3>Interface Design</h3>
-                              <p class="color-white">Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante.</p>
-                    </div>
-               </div>
-
-               <div class="col-md-3 col-sm-6">
-                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
-                         <i class="fa fa-paper-plane"></i>
-                              <h3>Content Strategy</h3>
-                              <p class="color-white">Specialisation in front-end strategy, ensuring that content of products are seen by the right users through various channels of delivery.</p>
-                    </div>
-               </div>
-
-               <div class="bg-dark col-md-3 col-sm-6">
-                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
-                         <i class="fa fa-table"></i>
-                              <h3>Mobile UX</h3>
-                              <p class="color-white">Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.</p>
-                    </div>
-               </div>
-
-               <div class="bg-white col-md-3 col-sm-6">
-                    <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
-                         <i class="fa fa-html5"></i>
-                              <h3>Coding</h3>
-                              <p>Adept at HTML5 + CSS, familiar with Python, currently learning C++</p>
-                    </div>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-
-<!-- Experience Section -->
-
-<section id="experience" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-6 col-sm-6">
-                    <div class="background-image experience-img"></div>
-               </div>
-
-               <div class="col-md-6 col-sm-6">
-                    <div class="color-white experience-thumb">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
-                              <h1>My Experiences</h1>
-                              <p class="color-white">Previous companies and my tasks</p>
-                         </div>
-
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
-                              <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
-                              </div>
-                              <div class="media-body">
-                                   <h3 class="media-heading">Graphic Designer <small>2014 Jul - 2015 Sep</small></h3>
-                                   <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              </div>
-                         </div>
-
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
-                              <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
-                              </div>
-                              <div class="media-body">
-                                   <h3 class="media-heading">Web Designer <small>2015 Oct - 2017 Jan</small></h3>
-                                   <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              </div>
-                         </div>
-
-                    </div>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-
-<!-- Education Section -->
-
-<section id="education" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-6 col-sm-6">
-                    <div class="color-white education-thumb">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
-                              <h1>My Education</h1>
-                              <p class="color-white">In cursus orci non ipsum gravida dignissim</p>
-                         </div>
-
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
-                              <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
-                              </div>
-                              <div class="media-body">
-                                   <h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
-                                   <p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
-                              </div>
-                         </div>
-
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
-                              <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
-                              </div>
-                              <div class="media-body">
-                                   <h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
-                                   <p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                              </div>
-                         </div>
-
-                    </div>
-               </div>
-
-               <div class="col-md-6 col-sm-6">
-                    <div class="background-image education-img"></div>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-
-<!-- Quotes Section -->
-
-<section id="quotes" class="parallax-section">
-     <div class="overlay"></div>
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-offset-1 col-md-10 col-sm-12">
-                    <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
-                    <h2 class="wow fadeInUp" data-wow-delay="0.8s">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h2>
-                    <p class="wow fadeInUp" data-wow-delay="1s">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-
-<!-- Contact Section -->
-
-<section id="contact" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-6 col-sm-12">
-                    <div class="contact-form">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                              <h1 class="color-white">Say hello..</h1>
-                              <p class="color-white">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
-                         </div>
-
-                         <div id="contact-form">
-                              <form action="#template-mo" method="post">
-                                   <div class="wow fadeInUp" data-wow-delay="1s">
-                                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
-                                   </div>
-                                   <div class="wow fadeInUp" data-wow-delay="1.2s">
-                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
-                                   </div>
-                                   <div class="wow fadeInUp" data-wow-delay="1.4s">
-                                        <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
-                                   </div>
-                                   <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
-                                        <input name="submit" type="submit" class="form-control" id="submit" value="Send">
-                                   </div>
-                              </form>
-                         </div>
-
-                    </div>
-               </div>
-
-               <div class="col-md-3 col-sm-6">
-                    <div class="background-image contact-img"></div>
-               </div>
-
-               <div class="bg-dark col-md-3 col-sm-6">
-                    <div class="contact-thumb">
-                         <div class="wow fadeInUp contact-info" data-wow-delay="0.6s">
-                              <h3 class="color-white">Visit my office</h3>
-                              <p>456 New Street 22000, New York City, USA</p>
-                         </div>
-
-                         <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
-                              <h3 class="color-white">Contact.</h3>
-                              <p><i class="fa fa-phone"></i> 01-0110-0220</p>
-                              <p><i class="fa fa-envelope-o"></i> <a href="mailto:hello@company.co">hello@company.co</a></p>
-                              <p><i class="fa fa-globe"></i> <a href="#">company.co</a></p>
-                         </div>
-
-                    </div>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-
-<!-- Footer Section -->
-
-<footer>
-	<div class="container">
-		<div class="row">
-
-               <div class="col-md-12 col-sm-12">
-                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
-                         <p>Copyright &copy; 2016 Your Company
-                    
-                    | Design: <a href="http://www.google.com/+templatemo" target="_parent">templatemo</a></p>
-                    </div>
-				<ul class="wow fadeInUp social-icon" data-wow-delay="2s">
-                         <li><a href="#" class="fa fa-facebook"></a></li>
-                         <li><a href="#" class="fa fa-twitter"></a></li>
-                         <li><a href="#" class="fa fa-google-plus"></a></li>
-                         <li><a href="#" class="fa fa-dribbble"></a></li>
-                         <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-               </div>
-			
-		</div>
-	</div>
-</footer>
-
-<!-- SCRIPTS -->
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/wow.min.js"></script>
+          <!-- End Navbar -->
+        </div>
+      </div>
+    </div>
+    <!--menu end--> 
+    <!--banner start-->
+    <div class="banner row" id="banner">
+    <div class="bannerText">
+        <h1>I'm Kay</h1>
+        <h3>Design &amp; Build Useable Application Experiences</h3>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd slides-container" style="height:100%"> 
+        <!--background slide show start-->
+        <div class="slide"> 
+          <img src="images/header-image/image01.png" alt="image01"> </div>
+        <div class="slide"> 
+          <img src="images/header-image/image02.jpg" alt="image01"> </div>
+        <!--background slide show end--> 
+      </div>
+    </div>
+    <!--banner end--> 
+    
+  </header>
+  <!--Header end -->
+  
+ <!--about us start-->
+  <section class="aboutus" id="aboutus">
+    <div class="container">
+      <div class="row">
+       <div class="col-md-12">
+      	<div class="heading">
+        <h2>About me</h2>
+        <h3>A small introduction about myself</h3>        
+      </div>
+      </div> 
+       </div> 
+      <div class="row">
+      <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right media"><img src="images/jhon-img.jpg" alt=""></div>
+      	<div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left media">
+        	<h5>Kay Gan</h5>
+            <h4>Project Manager &amp; Design Thinker</h4>
+            <p>I started off in the Games Design space, then moved into the Hospitality industry in the United States.</p>
+<p>Upon my return to Singapore, I shifted into MarComs, Events and finally landed in Agile Project Management and UX. I fortunately was introduced to the FinTech ecosystem, and have remained in FinTech ever since.</p>
+<p><a role="button" class="btn btn-primary btn-lg">Download Printable Resume</a></p>
+        </div>
+      	
+      </div>     
+    </div>    
+  </section>
+  <!--about us end--> 
+  <!--Skillset start -->
+  <section id="skillset" class="skillset">
+  	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+               <div class="heading">
+                <h2>Skills &amp; Expertice</h2>
+                <h3>I can say I’m quite good at</h3>        
+              </div>
+            </div>
+            <div class="col-md-12">
+            	<div class="col-md-6 col-sm-12 media">
+                	<p>Experienced Agile Project Manager with a focus in innovation and UX design. I conduct Design Thinking and Crypto-Literacy workshops</p>
+                </div>
+            	<div class="col-md-6 col-sm-12">                
+                <div class="skillbar clearfix " data-percent="94%">
+                    <div class="skillbar-title"><span>Web design</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent"></div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="86%">
+                    <div class="skillbar-title"><span>illustration</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent"></div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="41%">
+                    <div class="skillbar-title"><span>HTML / CSS</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent"></div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="52%">
+                    <div class="skillbar-title"><span>php</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent"></div>
+                </div> <!-- End Skill Bar -->                
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--Skillset end -->
+  <!--Work Experties start -->
+  <section id="experience" class="myexperties">
+  	<div class="container">
+        <div class="heading">
+        <h2>Work Experience</h2>
+        <h3>My previous associations</h3>        
+      </div>
+        
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	Mar,2013<br>Till Date
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>UIzards</h4>
+                <h5>Senior UX Designer</h5>
+                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
+duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
+lum sapien sed matti sapien sed mattis.</p>
+            </div>
+        </div>
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	July,2011<br>February 2013
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>Lexind</h4>
+                <h5>Senior UX Designer</h5>
+                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
+duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
+lum sapien sed matti sapien sed mattis.</p>
+            </div>
+        </div>
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	September,2019<br>June 2011
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </section>
+  <!--Work Experties end -->
+  <!--Education & diploma start
+  <section id="education" class="educationdiploma">
+  	<div class="container">
+        <div class="heading">
+        <h2>Education &amp; Diplomas</h2>
+        <h3>I can say i’m quite good at</h3>        
+      </div>
+        
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	Mar,2011<br>January 2011
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>Master Degree of Design</h4>
+                <h5>University of Design</h5>
+                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
+duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
+lum sapien sed matti sapien sed mattis.</p>
+            </div>
+        </div>
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	Mar,2011<br>January 2011
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>Bachelor of Arts</h4>
+                <h5>University of Design</h5>
+                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
+duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
+lum sapien sed matti sapien sed mattis.</p>
+            </div>
+        </div>
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	Mar,2011<br>January 2011
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>Master Degree of Design</h4>
+                <h5>Senior UX Designer</h5>
+                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
+duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
+lum sapien sed matti sapien sed mattis.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--Education & diploma end -->
+   -->
+  
+  <!--portfolio start-->
+	<section class="protfolio" id="ourwork">
+    <div class="container">
+        <div class="heading">
+            <h2>Portfolio</h2>
+            <h3>What I have done</h3>            
+        </div>
+    </div>
+    <div class="row">
+      <div class="portfolioFilter">
+        <ul>
+          <li><a href="#" data-filter="*" class="current">All</a></li>
+          <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
+          <li><a href="#" data-filter=".template">template</a></li>
+          <li><a href="#" data-filter=".illustration">UX</a></li>
+          <li class="last"><a href="#" data-filter=".webdesign">Web Design</a></li>
+        </ul>
+      </div>
+      <ul class="portfolioContainer row">
+      <li class="template col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/1.jpg" title="Project Title2" class="zoom lb lb_warsaw1"><i class="fa fa-plus fa-2x"></i></a> </span> </span> <img src="images/projects/thumb-images/thumb1.jpg" alt="" > </div>
+        </li>
+        <li class="template wordpress illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/2.jpg" title="Project Title2" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb2.jpg" alt="" > </div>
+        </li>
+        <li class="wordpress illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/3.jpg" title="Project Title3" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb3.jpg" alt="" > </div>
+        </li>
+        <li class="webdesign wordpress col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/4.jpg" title="Project Title4" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb4.jpg" alt="" > </div>
+        </li>
+        <li class="wordpress template col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/5.jpg" title="Project Title5" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb5.jpg" alt="" > </div>
+        </li>
+        <li class="template webdesign illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/6.jpg" title="Project Title6" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb6.jpg" alt="" > </div>
+        </li>
+        <li class="wordpress template col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/7.jpg" title="Project Title7" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb7.jpg" alt="" > </div>
+        </li>
+        <li class="template webdesign illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/8.jpg" title="Project Title8" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb8.jpg" alt="" > </div>
+        </li>
+        <li class="template col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/9.jpg" title="Project Title1" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb9.jpg" alt=""  > </div>
+        </li>
+        <li class="template wordpress col-xs-6 col-sm-3 col-md-4 col-lg-4">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/10.jpg" title="Project Title2" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb10.jpg" alt="" > </div>
+        </li>
+        <li class="wordpress col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/11.jpg" title="Project Title3" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb11.jpg" alt="" > </div>
+        </li>
+        <li class="template wordpress col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/12.jpg" title="Project Title4" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb12.jpg" alt="" > </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--portfolio end-->   
+  
+  <!--contact start-->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="heading">
+        
+      </div>
+    </div>
+
+  </section>
+  <section class="contactDetails">
+    <div class="container"> 
+    <div class="heading">
+        <h2>Drop a email</h2>
+        <h3>Please feel free if you would like to have a chat.</h3>       
+      </div>
+      <!--contact form start-->
+      <div class="row media">      	 
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conForm text-center">
+        <div id="message"></div>
+        <form method="post" action="php/contact.php" name="cform" id="cform">
+          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" placeholder="Your name" >
+          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 noMarr" placeholder="Your email" >
+          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" placeholder="Your message"></textarea>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input type="submit" id="submit" name="send" class="submitBnt" value="Send message"></div>
+          <div id="simple-msg"></div>
+        </form>
+      </div>
+      </div>
+      <!--contact form end--> 
+    </div>
+  </section>  
+  <!--contact end--> 
+  
+  <!--footer start-->
+  <section class="footer" id="footer">
+    <div class="container">
+      <ul>
+
+        <li><a href="https://www.linkedin.com/in/kayganyj/"><i class="fa fa-linkedin fa-2x"></i></a></li>
+
+      </ul>
+    </div>
+    <p class="text-center"><a href="#wrapper" class="gototop"><i class="fa fa-chevron-up fa-2"></i></a></p>
+  </section>
+  <!--footer end-->     
+  </div>
+<!--wrapper end--> 
+
+<!--modernizr js--> 
+<script type="text/javascript" src="js/modernizr.custom.26633.js"></script> 
+<!--jquary min js--> 
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+
+<!--for placeholder jquery--> 
+<script type="text/javascript" src="js/jquery.placeholder.js"></script> 
+
+<!--for header jquery--> 
+<script type="text/javascript" src="js/stickUp.js"></script> 
+<script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  //enabling stickUp on the '.navbar-wrapper' class
+	$('.navbar-wrapper').stickUp({
+		parts: {
+		  0: 'banner',
+		  1: 'aboutus',
+		  2: 'skillset',
+		  3: 'experience',
+		  4: 'ourwork',
+		  5: 'contact'
+		},
+		itemClass: 'menuItem',
+		itemHover: 'active',
+		topMargin: 'auto'
+		});
+	});
+	
+
+});
+</script>
+<script>
+	$('#banner').superslides({
+	  animation: 'fade',
+	  play: 5000
+	});
+</script>  
+
+<!--for portfolio jquery--> 
+<script src="js/jquery.isotope.js" type="text/javascript"></script> 
+<link type="text/css" rel="stylesheet" id="theme" href="css/jquery-ui-1.8.16.custom.css">
+<link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
+<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script> 
+<script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script> 
+
+<!--contact form js--> 
+<script type="text/javascript" src="js/jquery.contact.js"></script> 
+
+<script src="js/jquery.easing.js"></script> 
+<script src="js/jquery.mousewheel.js"></script> 
+<script defer src="js/slideroption.js"></script> 
+
+<!--for theme custom jquery--> 
 <script src="js/custom.js"></script>
 
 </body>
